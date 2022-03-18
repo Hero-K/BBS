@@ -1,0 +1,130 @@
+/* style_board.css */
+
+/* スレッドタイトル */
+.thread_description {
+    margin: 0 8px;
+}
+.thread_timestamp {
+    text-align: right;
+    font-size: 0.875rem;
+}
+
+/* 掲示板 
+**************************************************/
+.board {
+    margin: 0 8px;
+    margin-top: 48px;
+}
+.messages {
+    list-style: none;
+}
+/* メッセージ共通 */
+.message_item {
+    position: relative; /* トグル用 */
+    margin: 12px 0 4px;
+    padding: 0.25rem 0.375rem;
+    background-color: #3331;
+    border-radius: 4px;
+}
+.message_poster {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: 0.25rem;
+}
+.poster_id {
+    font-size: 0.875rem;
+}
+.poster_name {
+    font-size: 1rem;
+}
+/* 自分の名前だけ強調 */
+.self {
+    color: #c11;
+}
+.poster_timestamp {
+    position: relative;
+    top: -1px;
+    font-size: 0.875rem;
+}
+.poster_timestamp_edit {
+    position: relative;
+    top: -1px;
+    font-size: 0.75rem;
+    color: #3aa;
+}
+.message_text {
+    display: flex;
+    align-items: center;
+    margin: 4px 0;
+    min-height: 5.5rem;
+}
+.deleted {
+    opacity: 0.66;
+}
+
+/* フォーム 
+*********************************/
+.forms {
+    margin-top: 64px;
+}
+/* 入力項目共通 */
+.forms dl {
+    display: flex;
+    margin: auto;
+    margin-top: 12px;
+    width: 80%;
+}
+.forms dt {
+    display: inline-block;
+    margin-left: 12px;
+    width: 20%;
+}
+.forms dd {
+    display: inline-block;
+    margin-left: 12px;
+    vertical-align: center;
+    width: 80%;
+}
+input[type="name"],
+textarea {
+    border: solid 1px #777;
+}
+
+/* 入力項目個別 */
+#form_name,
+#form_text {
+    width: 100%;
+    padding: 0.125rem 0.25rem;
+    border-radius: 0.125rem;
+}
+#form_text {
+    height: 96px;
+    resize: vertical;
+}
+.form_err {
+    width: 80%;
+    margin: auto;
+    text-align: right;
+    color: #f33;
+}
+
+/* 送信ボタン */
+#submit {
+    display: block;
+    margin: 16px auto;
+    padding: 0.375rem 0.625rem;
+    color: #fdfdfd;
+    font-size: 0.75rem;
+    font-weight: bold;
+    background-color: #3aa;
+    border-radius: 0.25rem;
+    outline: none;
+    border: none;
+    transition: 0.2s;
+}
+#submit:hover {
+    background-color: #3aac;
+    cursor: pointer;
+}
+

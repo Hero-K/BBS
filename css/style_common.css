@@ -1,0 +1,62 @@
+/* style_common.css */
+@charset "utf-8";
+
+/* 基本設定 
+***************************************************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: 100%;
+    font-family: YuGothic, '游ゴシック', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    /* background-color: #eee; */
+}
+a {
+    text-decoration: none;
+    color: #333;
+}
+a:hover {
+    color: #f11;
+    cursor: pointer;
+}
+.container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 960px;
+    background-color: #fff;
+}
+
+/* ヘッダー 
+*************************************************/
+h1 {
+    text-align: center;
+}
+
+
+/* メインコンテンツ 
+*************************************************/
+.main_content {
+    margin-top: 32px;
+}
+
+
+
+/* フッター 
+*****************************************************/
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 64px;
+    height: 96px;
+    text-align: center;
+    background-color: #c1c1c1;
+}
+.copyright {
+    color: #555;
+}

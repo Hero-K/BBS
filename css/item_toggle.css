@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+/* トグル */
+.toggle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 5;
+    font-size: 1.25rem;
+}
+.toggle_btn {
+    display: block;
+    width: 100%;
+    padding: 0 0.5rem;
+    transition: 0.1s;
+}
+
+/* トグルメニュー */
+.toggle_menu {
+    display: none;
+    position: absolute;
+    top: 2rem;
+    right: 0;
+}
+.toggle_menu ul {
+    list-style: none;
+}
+.toggle_menu li {
+    font-size: 0.875rem;
+    background-color: #ccc;
+    border-top: solid 1px #555;
+}
+.toggle_menu li:hover {
+    background-color: #bbb;
+}
+.toggle_menu li:first-child {
+    border-top: none;
+}
+.toggle_menu li a{
+    display: block;
+    padding: 0.25rem 2rem;
+    width: 100%;
+    height: 100%;
+    text-decoration: underline;
+}
