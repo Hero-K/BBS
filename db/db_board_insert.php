@@ -19,7 +19,7 @@
     }
 
     if($err){
-        header('Location: ../index.php?err='.$err.'#forms_board_insert');
+        header("Location: ../index.php?err=$err#forms_board_insert");
         exit;
     }
 
