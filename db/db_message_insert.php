@@ -20,7 +20,7 @@
 
 
     if($err){
-        header('Location: ../board.php?bid='.$bid.'&err='.$err.'#forms_message_insert');
+        header('Location: ../messages.php?bid='.$bid.'&err='.$err.'#forms_message_insert');
         exit;
     }
 
@@ -53,4 +53,4 @@
     $stmt = null;
     $pdo = null;
 
-    header('Location: ../board.php?bid='.$bid.'#forms_message_insert');
+    header('Location: ../messages.php?bid='.$bid.'#forms_message_insert');

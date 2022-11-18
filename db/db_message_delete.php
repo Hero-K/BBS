@@ -47,7 +47,7 @@
     
     // PHPとJSが競合してしまうのでJSに統一
     $start_of_script = '<script type="text/javascript">';
-    $header = 'location.href="../board.php?bid='.$bid.'";'; // 帰る為のロケーション設定
+    $header = 'location.href="../messages.php?bid='.$bid.'";'; // 帰る為のロケーション設定
     $end_of_script = '</script>';
 
     echo $start_of_script. $alert. $header. $end_of_script; // 削除された場所へリダイレクト

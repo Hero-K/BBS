@@ -41,4 +41,4 @@
     $stmt = null;
     $pdo = null;
 
-    header('Location: ../board.php?bid='.$bid.'#i'.$tid);
+    header('Location: ../messages.php?bid='.$bid.'#i'.$tid);

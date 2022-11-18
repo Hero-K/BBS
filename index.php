@@ -103,7 +103,7 @@
 
                 <?php foreach ($boards as $board){ ?>
                     <li class="thread_item">
-                    <a class="thread_link" href="board.php?bid=<?php echo $board['BoardID'] ?>">
+                    <a class="thread_link" href="messages.php?bid=<?php echo $board['BoardID'] ?>">
                         <small class="thread_timestamp"><?php echo $board['BoardTimestamp'] ?></small>
                         <h3 class="thread_name"><?php echo $board['BoardName'] ?></h3>
                         <p class="thread_amount"><?php echo $board['Amount'] ?></p>
